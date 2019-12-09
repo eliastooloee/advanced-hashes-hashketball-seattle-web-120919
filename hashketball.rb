@@ -205,7 +205,7 @@ def big_shoe_rebounds
    game_hash.each do|team, team_data|
    team_points=0
    team_name=game_hash[team][:team_name]
-    key[:players].each do |player|
+    team_data[:players].each do |player|
    points=player[:points]
    team_points+=points
  end
