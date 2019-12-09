@@ -231,4 +231,14 @@ if team_points > combined_points
   end 
   
   def long_name_steals_a_ton
+    master_thief=''
+    most_steals=0
+    game_hash.each do |team, team_data|
+      team_data[:players].each do |player|
+        if player[:steals] > most_steals
+        master_thief, most_steals= player[:player_name], player[:steals]
+      end
+    end
+    return true if master_thief==player_with_longest_name
+  end
     
