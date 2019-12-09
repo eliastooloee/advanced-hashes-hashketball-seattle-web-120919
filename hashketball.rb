@@ -214,3 +214,11 @@ def big_shoe_rebounds
  return winner 
  end
  
+ def player_with_longest_name
+   longest_name=''
+   length=0
+   game_hash.each do |team, team_data|
+     team_data[:players].each do |player|
+       name_length= player[:player_name].length
+       longest_name, length=player[:player_name]
+   
