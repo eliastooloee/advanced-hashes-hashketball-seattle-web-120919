@@ -200,4 +200,17 @@ def big_shoe_rebounds
  end
  
  def winning_team
-   
+   combined_points=0
+   winner=''
+   game_hash.each do|team, team_data|
+   team_points=0
+   team_name=game_hash[team][:team_name]
+    key[:players].each do |player|
+   points=player[:points]
+   team_points+=points
+ end
+ winner, combined_points = team_name, team_points if team_points > combined_points
+ end
+ return winner 
+ end
+ 
