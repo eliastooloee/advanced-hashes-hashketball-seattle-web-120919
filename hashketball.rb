@@ -210,6 +210,7 @@ def big_shoe_rebounds
    team_points+=points
  end
 if team_points > combined_points
+ binding.pry
  winner, combined_points = team_name, team_points
  end
  return winner 
