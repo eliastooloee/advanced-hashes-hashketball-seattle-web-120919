@@ -209,7 +209,7 @@ def big_shoe_rebounds
    points=player[:points]
    team_points+=points
  end
-if team_points > combined_points
+if team_points < combined_points
  winner, combined_points = team_name, team_points
  end
  return winner 
