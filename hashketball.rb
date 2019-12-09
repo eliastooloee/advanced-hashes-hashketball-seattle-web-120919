@@ -225,7 +225,5 @@ def big_shoe_rebounds
      end
    end
      return longest_name
-     
-     
    end
    
