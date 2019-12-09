@@ -230,7 +230,7 @@ if team_points > combined_points
    end
   end 
   
-  def long_name_steals_a_ton
+  def long_name_steals_a_ton?
     master_thief=''
     most_steals=0
     game_hash.each do |team, team_data|
