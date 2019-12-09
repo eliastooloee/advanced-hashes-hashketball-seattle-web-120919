@@ -241,4 +241,4 @@ if team_points > combined_points
     end
     return true if master_thief==player_with_longest_name
   end
-    
+end    
