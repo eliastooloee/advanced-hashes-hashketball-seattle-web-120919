@@ -220,9 +220,12 @@ def big_shoe_rebounds
    game_hash.each do |team, team_data|
      team_data[:players].each do |player|
        name_length= player[:player_name].length
-       longest_name, length=player[:player_name], name_length if name_length>length
+       if name_length>length
+       longest_name, length=player[:player_name], name_length 
      end
    end
      return longest_name
+     
+     
    end
    
